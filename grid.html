@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .first{
+        border: 10px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template=columns: 25%,25%,25%,25%;
+        grid-template-rows: 25%,25%,25%,25%;
+    }
+    .heder{
+        background-color: yellow;
+        grid-column: 1/5;
+        grid-row:1/2;
+        height: 100px;
+    }
+    .box1{
+        background-color: green;
+        grid-column:1/2;
+        grid-row:2/3;
+        height: 100px;
+    }
+    .box2{
+        background-color: orangered;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 100px;
+    }
+    .box3{
+        background-color: aquamarine;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        height: 100px;
+    }
+    .sidebar{
+        background-color: tomato;
+        grid-column: 4/5;
+        grid-row: 2/4;
+        height: 250px;
+    }
+    .main-content{
+        background-color: black;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        height: 350px;
+    }
+    .footer{
+        background-color: purple;
+        grid-column: 1/5;
+        grid-row: 4/5;
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+    <div class="first">
+    <div class="heder"><img src=bgimage.jpg height="100px"></div>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="sidebar">sidebar</div>
+    <div class="main-content">main-content</div>
+    <div class="footer">footer</div>
+</div>
+
+</body>
+</html>
