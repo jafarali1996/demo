@@ -1,0 +1,26 @@
+.main
+{
+    display: flex;
+    background-color: azure;
+    border: 2px solid black;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.level
+{
+    margin: 2px;
+    padding: 1px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    color: blue;
+    background-color: brown;
+    align-items: center;
+}
+.my2
+{
+    align-self: flex-end;
+}
