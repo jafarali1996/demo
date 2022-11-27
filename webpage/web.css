@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenar
+{
+    height: 200px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+}
