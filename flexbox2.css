@@ -1,7 +1,7 @@
 .contenar
 {
     display: flex;
-    height: 200px;
+    height: 500px;
     width: 100%;
     padding: 0%;
     border: 2px solid black;
@@ -13,20 +13,24 @@
 .item
 {
     height: 100px;
-    width: 100px;
+    width: 100%;
     background-color: rgb(18, 192, 41);
     padding: 2px;
     margin: 5px;
     border: 1px solid red;
     margin: 5px;
 }
-.jafar
-{
-align-self: center;
-    
-}
 .jafar2
 {
-    align-self: flex-end;
+    height: 100px;
+    width: 80%;
+    background-color: antiquewhite;
+    padding-right: 20px;
+    border: 1px solid black;
+    margin: 2px;
 }
-
+.my-image
+{
+    height: 100px;
+    width: 80%;
+}
