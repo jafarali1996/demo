@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>optiontag</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-areas: "heder heder heder";
+      }
+      input[type="submit"] {
+        opacity: 0;
+        transition: 0.3s;
+      }
+      input:not(:placeholder-shown) + input[type="submit"] {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" />
+      <input type="submit" value="send" />
+    </form>
+    <label for="language">Select Language</label><br />
+    <select>
+      <option value="gujrati">GUJARATI</option>
+      <option value="hindi">HINDI</option>
+      <option value="english">ENGLISH</option>
+      <option value="urdu">URDU</option>
+    </select>
+    <hr />
+    <label for="city">Select City</label><br />
+    <select>
+      <option value="ahemdabad">AHEMDABAD</option>
+      <option value="surat">SURAT</option>
+      <option value="baroda">BARODA</option>
+      <option value="gandhingar">GANDHINAGAR</option>
+    </select>
+    <hr />
+    <div>
+      <main>
+        <header>heder</header>
+        <article>content</article>
+        <aside>sidebar</aside>
+        <footer>footer</footer>
+      </main>
+    </div>
+    <hr />
+    <div>
+      <form>
+        <!-- <label>click button</label> -->
+        <input type="button" value="button" /><br /><br />
+        <!-- <label>select time</label> -->
+        <input type="time" value="datetime" /><br /><br />
+        <input type="search" placeholder="search" /><br /><br />
+        <!-- <label>select date</label> -->
+        <input type="datetime-local" /><br /><br />
+        <!-- <label>select color</label> -->
+        <input type="color" /><br /><br />
+        <input type="file" /><br /><br />
+        <input type="email" /><br /><br />
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>

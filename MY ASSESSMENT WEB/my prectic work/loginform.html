@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+form {
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  padding: 20px;
+  /* background-color: rgb(180, 248, 225); */
+  border-radius: 10px;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-left-color: rgb(126, 241, 10);
+  border-right-color: #4c27f3;
+  border-bottom-color: rgb(99, 173, 241);
+  border-top-color: rgb(245, 148, 22);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color:  hsl(128, 98%, 52%);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: blueviolet;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 11px;
+  box-sizing: border-box;
+  border-top-color: purple;
+  border-bottom-color: maroon;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border:1px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* input[type="submit"]:hover,input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  background-color: #03f50f;
+} */
+
+</style>
+</head>
+<body>
+	<form>
+		<h2>Login</h2>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+		<input type="submit" value="Login">
+        <input type="submit" value="Forgot Password">
+	</form>
+    <br><br>
+    <form>
+		<h2>Registration Form</h2>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" required>
+		<input type="submit" value="Register">
+        
+    	</form>
+</body>
+</html>
