@@ -44,18 +44,23 @@ input[type="text"], input[type="email"], input[type="password"] {
   border-bottom-color: maroon;
 }
 
+
 input[type="submit"] {
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #0df815;
+  color: #0f0e0e;
   padding: 10px;
   border:1px solid red;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  
+  
 }
 
-/* input[type="submit"]:hover,input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
-  background-color: #03f50f;
-} */
+input[type="submit"]:hover,input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  background-color: #ebfc04;
+}
 
 </style>
 </head>
@@ -66,8 +71,8 @@ input[type="submit"] {
 		<input type="text" id="username" name="username">
 		<label for="password">Password:</label>
 		<input type="password" id="password" name="password">
-		<input type="submit" value="Login">
-        <input type="submit" value="Forgot Password">
+		<input type="submit"  value="Login">
+       <br> <input type="submit" value="Forgot Password">
 	</form>
     <br><br>
     <form>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loding bar</title>
+    <style>
+        .loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 30px;
+  background-color: #3498db;
+  border-radius: 5px;
+  animation: loader 1s ease-in-out infinite;
+}
+
+.loader-bar:nth-child(1) {
+  left: 0px;
+  animation-delay: 0s;
+}
+
+.loader-bar:nth-child(2) {
+  left: 20px;
+  animation-delay: 0.1s;
+}
+
+.loader-bar:nth-child(3) {
+  left: 40px;
+  animation-delay: 0.2s;
+}
+
+.loader-bar:nth-child(4) {
+  left: 60px;
+  animation-delay: 0.3s;
+}
+
+.loader-bar:nth-child(5) {
+  left: 80px;
+  animation-delay: 0.4s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(3);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+</body>
+</html>
