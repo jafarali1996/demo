@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        nav{
+            background-color: rgb(12, 12, 11);
+            overflow: hidden;
+            border-radius: 15pc;
+        }
+        nav li{
+            float: left;
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li a{
+            display: block;
+            color: rgb(243, 241, 238);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 4pc;
+        }
+        nav li a:hover{
+            background-color: blue;
+            background: linear-gradient(0deg, rgb(0, 81, 255) 0%, rgb(103, 103, 122) 100%);
+        }
+        nav ul ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: blue;
+        }
+        nav ul li:hover > ul{
+            display: inherit;
+        }
+        nav ul ul li{
+            float: none;
+            position: relative;
+        }
+        nav ul ul li a{
+            padding: 12px 16px;
+        }
+        nav ul ul ul{
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+        <nav>
+            <ul>
+            <li><a href="https://google.com">Home</a></li>
+            <li><a href="https://aboutus.com">About</a></li>
+            <li><a href="https://contectus.com">Contacs</a></li>
+            <li><a href="">Service</a>
+            <ul>
+                <li><a href="">Web Desien</a></li>
+                <li><a href="">App Desigen</a></li>
+                <li><a href="">Service</a></li>
+            </ul></li>
+            <li><a href="">Help</a></li>
+            </ul>
+        </nav>
+    
+</body>
+</html>
